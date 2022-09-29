@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phoenix</title>
+    <style>
+      body {
+        background: linear-gradient(
+          160deg,
+          rgb(255, 168, 168) 2%,
+          rgb(252, 255, 0) 75%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: #dc2f2f;
+        margin: 25px;
+        border-radius: 20px;
+        border-width: 2px;
+        font-family: Impact;
+        font-size: 50px;
+      }
+      h2 {
+        font-size: 30px;
+        text-align: center;
+        color: #455d7a;
+        border: solid #ff5722;
+        padding: 15px;
+        border-radius: 10px;
+        border-width: 2px;
+        font-family: impact;
+      }
+      p {
+        font-family: Cambria;
+        font-size: 14px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      footer {
+        margin: 25px;
+        text-align: center;
+        font-family: Freestyle Script;
+        font-size: 25px;
+      }
+      .container {
+        max-width: 1050px;
+        margin: 0 auto;
+      }
+      .fab {
+        color: #ff6f3c;
+        font-family: Freestyle Script;
+        font-size: 45px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .hot {
+        color: #ff5722;
+        font-family: Freestyle Script;
+        font-size: 45px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .wikiPhx {
+        text-decoration: none;
+        font-size: 12px;
+      }
+      .moreabout {
+        margin-top: 20px;
+      }
+
+      img {
+        display: inline;
+        margin: 0 auto;
+
+        padding: 10px;
+        border: solid #455d7a;
+        border-width: 5px;
+        border-radius: 20px;
+      }
+      button {
+        border-radius: 10px;
+        margin: 0 auto;
+        display: block;
+        background-color: transparent;
+        border: 1px solid #000000;
+        color: #ff5722;
+        font-size: 14px;
+        line-height: 22px;
+        padding: 2px 16px;
+        text-decoration: none;
+        transition: all 200ms ease;
+        font-family: Cambria;
+      }
+      button:hover {
+        color: #ffffff;
+        background: #ff5722;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🏜️Phoenix!🏜️</h1>
+      <h2>
+        ☀️🌵<span class="hot">Hot</span>     and
+        <span class="fab">    Fabulous!!!</span>🌵☀️
+      </h2>
+     
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/409/original/catusphx.jpg?1662273575" alt="phxcactus" width="270" height="300">
+ <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/406/original/phxnicepic.jpg?1662272851"
+        alt="phx dusk" width="400" height="300"
+      >
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/408/original/riverphx.jpg?1662273567" alt="phx river" width="270" height="300">
+
+      <p>
+        Phoenix is the capital of the southwestern U.S. state of Arizona. Known
+        for its year-round sun and warm temperatures, it anchors a sprawling,
+        multicity metropolitan area known as the Valley of the Sun. It's known
+        for high-end spa resorts, Jack Nicklaus–designed golf courses and
+        vibrant nightclubs. Other highlights include the Desert Botanical
+        Garden, displaying cacti and numerous native plants.
+      </p>
+      <p class="moreabout">
+        <a
+          href="https://en.wikipedia.org/wiki/Phoenix,_Arizona"
+          target="_blank"
+          class="wikiPhx"
+          >More About Phoenix🌵</a
+        >
+      </p>
+      <hr>
+      </div>
+    </div>
+    <br />
+    <button>Vist Phoenix</button>
+
+    <footer>Page Created by Kayla Strohfus</footer>
+  </body>
+  <script>
+    function visitPhx() {
+      let name = prompt("What is your name?");
+      let when = prompt("What date do you plan to visit?");
+      alert("We'll see you" + " " + when + " " + name + "!!!" + " " + "👋");
+    }
+
+    let button = document.querySelector("button");
+
+    button.addEventListener("click", visitPhx);
+  </script>
+</html>
